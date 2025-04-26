@@ -1,4 +1,4 @@
-# app/models/__init__.py
+# Import all model classes so they are registered with SQLAlchemy's metadata
 
 from .client import Client
 from .program import HealthProgram

@@ -6,6 +6,7 @@ from app.database.session import SessionLocal
 
 router = APIRouter(prefix="/clients", tags=["Clients"])
 
+# Dependency to get a database session
 def get_db():
     db = SessionLocal()
     try:
@@ -13,6 +14,7 @@ def get_db():
     finally:
         db.close()
 
+# Create a new client
 @router.post("/", response_model=ClientOut)
 def create_client(client: ClientCreate, db: Session = Depends(get_db)):
     new_client = Client(**client.dict())
@@ -21,10 +23,12 @@ def create_client(client: ClientCreate, db: Session = Depends(get_db)):
     db.refresh(new_client)
     return new_client
 
+# Get all clients
 @router.get("/", response_model=list[ClientOut])
 def get_clients(db: Session = Depends(get_db)):
     return db.query(Client).all()
 
+# Get a client by ID
 @router.get("/{client_id}", response_model=ClientOut)
 def get_client_by_id(client_id: int, db: Session = Depends(get_db)):
     client = db.query(Client).filter(Client.id == client_id).first()
