@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.env
+*.sqlite3
+venv/
+.env
+
+# VSCode
+.vscode/
+
+# Alembic
+alembic.ini
+alembic/
+
+# OS
+.DS_Store
+Thumbs.db
+venv/
+__pycache__/
