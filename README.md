@@ -43,3 +43,15 @@ A simple health information API system for managing clients and health programs.
     uvicorn main:app --reload
 
 6. Visit docs at: http://localhost:8000/docs
+
+
+
+## Live Deployment
+
+The app is deployed on Render:  
+https://health-info-system-zimv.onrender.com/docs
+
+## Prptotype Demonstration
+A prototype demonstration of the Health Information System is available in the assets folder. It includes:
+-  A PowerPoint presentation explaining the project overview and implementation.
+- A screen recording video demonstrating the functionality of the system.
