@@ -51,7 +51,7 @@ A simple health information API system for managing clients and health programs.
 The app is deployed on Render:  
 https://health-info-system-zimv.onrender.com/docs
 
-## Prptotype Demonstration
+## Prototype Demonstration
 A prototype demonstration of the Health Information System is available in the assets folder. It includes:
 -  A PowerPoint presentation explaining the project overview and implementation.
 - A screen recording video demonstrating the functionality of the system.
