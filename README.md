@@ -1,4 +1,4 @@
-# Health Information System – CEMA Internship Assessment
+# Health Information System Project
 
 A simple health information API system for managing clients and health programs.
 
